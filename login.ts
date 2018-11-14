@@ -13,7 +13,7 @@ export class Login  {
 
   private _doLogin(username: string, password: string) {
     return new Promise((resolve, reject) => {
-      let action: UserAction = new UserAction(ActionType.ACTION_LOGIN, "xxxx");
+      let action: UserAction = new UserAction("app-login", "xxxx");
       action.username = username;
       action.password = password;
       action.callback = (error, responseJson) => {
